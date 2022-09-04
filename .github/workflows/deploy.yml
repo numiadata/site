@@ -27,7 +27,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v2
       - name: Build with Gulp
-        run: gulp build
+        run: npm i && gulp build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
